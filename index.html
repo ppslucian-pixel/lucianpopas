@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://127.0.0.1:5500/Vinarie%20si%20degustator%20de%20vinuri.html -->
+<html lang="ro"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Domeniul Vinului — Vinărie &amp; Degustare</title>
+<meta name="description" content="Domeniul Vinului — vinărie premium în Cricova, Moldova. Degustări ghidate, ture prin podgorii și colecții de vinuri selectate.">
+
+<!-- Preload imaginea critică LCP pentru încărcare instantanee (Performanță maximă) -->
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=1200&amp;h=675&amp;fit=crop&amp;q=70">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 100 100&#39;&gt;&lt;text y=&#39;.9em&#39; font-size=&#39;90&#39;&gt;%F0%9F%8D%B7&lt;/text&gt;&lt;/svg&gt;">
+<link rel="apple-touch-icon" href="data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 100 100&#39;&gt;&lt;text y=&#39;.9em&#39; font-size=&#39;90&#39;&gt;%F0%9F%8D%B7&lt;/text&gt;&lt;/svg&gt;">
+
+<!-- Conexiuni DNS rapide pentru fonturi externe -->
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Domeniul Vinului — Vinărie &amp; Degustare_files/css2" rel="stylesheet">
+
+<!-- Încărcare non-blocking pentru FontAwesome (Elimină avertismentul render-blocking din Lighthouse) -->
+<link rel="stylesheet" href="./Domeniul Vinului — Vinărie &amp; Degustare_files/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13UN+UyJu83O7L8g==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all" onload="this.media=&#39;all&#39;">
+
+<style>
+/* =============================================
+   DOMENIUL VINULUI — Combined Styles
+   ============================================= */
+
+:root {
+  --wine: #7a1a2e; --wine-dark: #5a1020; --wine-light: #a83248;
+  --gold: #c8a96e; --cream: #f9f5ef; --dark: #0f1117; --dark2: #1a1d27;
+  --text: #2a2035; --text-light: #6b6078; --white: #ffffff;
+
+  --c-bg: #0e0e0e; --c-surface: #151515; --c-surface2: #1c1c1c;
+  --c-border: #2a2a2a; --c-accent: #e8c97a; --c-accent2: #7ac8e8;
+  --c-text: #f0ede6; --c-muted: #6a6760;
+  --c-error: #e87a7a; --c-success: #7ae8a8; --c-radius: 4px;
+}
+
+body.alt-colors {
+  --wine: #4a0e17; --wine-dark: #2d050a; --wine-light: #7a1a2e;
+  --gold: #b39254; --cream: #15171e; --dark: #f9f5ef; --dark2: #ede6dc;
+  --text: #ede6dc; --text-light: #b2a8bc; --white: #0f1117;
+
+  --c-bg: #f5f2eb; --c-surface: #ffffff; --c-surface2: #fcfbfa;
+  --c-border: #e2dcda; --c-accent: #4a0e17; --c-accent2: #2d050a;
+  --c-text: #2a2035; --c-muted: #7d7585;
+}
+
+body.alt-colors #about, 
+body.alt-colors #experience {
+  background: var(--cream);
+}
+body.alt-colors .wine-card,
+body.alt-colors .package-card {
+  border-color: rgba(179, 146, 84, 0.3);
+  background: rgba(255,255,255,0.02);
+}
+body.alt-colors .package-card.featured {
+  background: var(--wine);
+  color: #ffffff;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Jost', sans-serif; color: var(--text); background: var(--white); overflow-x: hidden; transition: background 0.4s ease, color 0.4s ease; }
+img { max-width: 100%; height: auto; display: block; }
+:focus { outline: 3px solid var(--gold); outline-offset: 2px; }
+
+/* NAV */
+nav#navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1.2rem 4rem;
+  background: rgba(10,8,15,0.6); backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(200,169,110,0.15); transition: all 0.3s;
+}
+nav#navbar.scrolled { background: rgba(15,17,23,0.95); padding: 0.9rem 4rem; }
+.nav-logo { font-family: 'Cormorant Garamond', serif; color: var(--gold); font-size: 1.5rem; font-weight: 300; letter-spacing: 0.1em; text-decoration: none; }
+.nav-links { display: flex; gap: 2.5rem; list-style: none; align-items: center; }
+.nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.3s; font-weight: 400; }
+.nav-links a:hover { color: var(--gold); }
+
+.nav-actions { display: flex; align-items: center; gap: 1rem; }
+.nav-cta { background: var(--wine); color: #ffffff !important; border: none; padding: 0.6rem 1.5rem; font-family: 'Jost', sans-serif; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; border-radius: 2rem; transition: all 0.3s; text-decoration: none; }
+.nav-cta:hover { background: var(--wine-light); transform: translateY(-1px); }
+
+.btn-toggle-colors {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(200, 169, 110, 0.3);
+  color: var(--gold);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+.btn-toggle-colors:hover {
+  background: var(--gold);
+  color: var(--wine-dark);
+  transform: rotate(30deg);
+}
+
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+.hamburger span { width: 24px; height: 2px; background: #ffffff; transition: 0.3s; display: block; }
+
+/* HERO */
+#hero { position: relative; height: 100vh; min-height: 600px; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
+/* Utilizăm URL-ul preîncărcat și optimizat de 1200px lățime */
+.hero-bg { position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=1200&h=675&fit=crop&q=70') center/cover no-repeat; filter: brightness(0.45) saturate(0.8); }
+.hero-overlay { position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(122,26,46,0.25) 0%, rgba(0,0,0,0.6) 70%); }
+.hero-vine { position: absolute; inset: 0; overflow: hidden; opacity: 0.12; background-image: repeating-linear-gradient(90deg, rgba(200,169,110,0.3) 0px, transparent 1px, transparent 80px, rgba(200,169,110,0.3) 81px), repeating-linear-gradient(0deg, rgba(200,169,110,0.3) 0px, transparent 1px, transparent 80px, rgba(200,169,110,0.3) 81px); }
+.hero-content { position: relative; z-index: 2; padding: 2rem; animation: heroFadeIn 1.2s ease-out; }
+@keyframes heroFadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+.hero-eyebrow { font-size: 0.75rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
+.hero-title-winery { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 6vw, 5.5rem); font-weight: 300; color: #ffffff; line-height: 1.1; margin-bottom: 1.2rem; }
+.hero-title-winery em { font-style: italic; color: var(--gold); }
+.hero-sub { font-size: 1rem; color: rgba(255,255,255,0.7); letter-spacing: 0.08em; margin-bottom: 2.5rem; font-weight: 300; }
+.btn-primary { display: inline-block; background: var(--wine); color: #ffffff; padding: 0.9rem 2.5rem; border-radius: 3rem; text-decoration: none; font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; border: 1px solid var(--wine-light); transition: all 0.35s; cursor: pointer; font-family: 'Jost',sans-serif; }
+.btn-primary:hover { background: var(--wine-light); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(122,26,46,0.5); }
+.scroll-indicator { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); animation: bounce 2s infinite; cursor: pointer; }
+.scroll-indicator span { display: block; width: 20px; height: 20px; border-right: 2px solid var(--gold); border-bottom: 2px solid var(--gold); transform: rotate(45deg); margin: -6px auto; }
+@keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
+
+/* SECTIONS */
+.winery-section { padding: 6rem 0; transition: background 0.4s ease; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+.section-tag { font-size: 0.7rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--wine); margin-bottom: 0.8rem; font-weight: 500; }
+.section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; color: var(--text); line-height: 1.15; margin-bottom: 1rem; }
+.section-title.centered { text-align: center; }
+.section-sub { color: var(--text-light); font-size: 0.95rem; line-height: 1.7; }
+.section-sub.centered { text-align: center; max-width: 500px; margin: 0 auto; }
+.divider { width: 50px; height: 2px; background: var(--gold); margin-bottom: 2rem; }
+.divider.centered { margin: 0 auto 2rem; }
+
+/* ABOUT */
+#about { background: var(--cream); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.about-text p { color: var(--text-light); line-height: 1.8; margin-bottom: 1rem; font-size: 0.95rem; }
+.stats { display: flex; gap: 3rem; margin-top: 2.5rem; }
+.stat-item { text-align: center; }
+.stat-icon { font-size: 1.5rem; color: var(--wine); margin-bottom: 0.4rem; }
+.stat-number { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 600; color: var(--wine); line-height: 1; }
+.stat-label { font-size: 0.75rem; color: var(--text-light); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.3rem; }
+.about-image { position: relative; }
+.about-image img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 4px; box-shadow: 20px 20px 60px rgba(0,0,0,0.15); }
+.about-accent { position: absolute; bottom: -1.5rem; right: -1.5rem; width: 120px; height: 120px; border: 2px solid var(--gold); border-radius: 4px; z-index: -1; }
+
+/* WINES */
+#wines { background: var(--white); }
+.wines-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 3rem; }
+.wine-card { border: 1px solid #e8e0d8; border-radius: 8px; padding: 1.8rem; transition: all 0.35s; cursor: default; position: relative; overflow: hidden; }
+.wine-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: var(--wine); transform: scaleY(0); transform-origin: bottom; transition: transform 0.35s; }
+.wine-card:hover { border-color: var(--wine); box-shadow: 0 8px 40px rgba(122,26,46,0.1); transform: translateY(-2px); }
+.wine-card:hover::before { transform: scaleY(1); }
+.wine-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; }
+.wine-name { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; color: var(--text); }
+.wine-price { font-size: 1.1rem; font-weight: 500; color: var(--wine); }
+.wine-meta { font-size: 0.8rem; color: var(--text-light); margin-bottom: 0.8rem; letter-spacing: 0.05em; }
+.wine-desc { font-size: 0.88rem; color: var(--text-light); line-height: 1.6; }
+.wine-type-badge { display: inline-block; padding: 0.2rem 0.7rem; border-radius: 20px; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; margin-left: 0.5rem; }
+.badge-red { background: rgba(122,26,46,0.1); color: var(--wine); }
+.badge-white { background: rgba(200,169,110,0.15); color: #8a6a20; }
+
+/* EXPERIENCE */
+#experience { background: var(--cream); }
+.exp-gallery { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-top: 3rem; }
+.exp-img { aspect-ratio: 4/3; border-radius: 6px; overflow: hidden; }
+.exp-img img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; transition: transform 0.4s; }
+.exp-img:hover img { transform: scale(1.04); }
+
+/* PACKAGES */
+#packages { background: var(--white); }
+.packages-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; margin-top: 3rem; }
+.package-card { border: 1px solid #e8e0d8; border-radius: 12px; padding: 2rem; transition: all 0.35s; position: relative; overflow: hidden; }
+.package-card.featured { background: var(--wine); border-color: var(--wine); color: #ffffff; transform: scale(1.02); }
+.package-card:not(.featured):hover { border-color: var(--wine); box-shadow: 0 12px 50px rgba(122,26,46,0.12); transform: translateY(-4px); }
+.pkg-badge { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; background: var(--gold); color: #3a2005; padding: 0.25rem 0.8rem; border-radius: 20px; display: inline-block; margin-bottom: 1rem; }
+.pkg-name { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; margin-bottom: 0.3rem; }
+.pkg-meta { display: flex; flex-direction: column; gap: 0.4rem; margin: 1.2rem 0; font-size: 0.85rem; }
+.pkg-meta-item { display: flex; align-items: center; gap: 0.6rem; }
+.pkg-meta-item .icon { font-size: 1rem; color: var(--gold); }
+.package-card.featured .pkg-meta-item { color: rgba(255,255,255,0.85); }
+.pkg-price { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 600; color: var(--wine); margin-bottom: 0.3rem; }
+.package-card.featured .pkg-price { color: var(--gold); }
+.pkg-price-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); margin-bottom: 1.2rem; }
+.package-card.featured .pkg-price-label { color: rgba(255,255,255,0.6); }
+.pkg-desc { font-size: 0.85rem; color: var(--text-light); line-height: 1.6; margin-bottom: 1.5rem; }
+.package-card.featured .pkg-desc { color: rgba(255,255,255,0.75); }
+.btn-reserve { width: 100%; padding: 0.9rem; border-radius: 8px; border: none; cursor: pointer; font-family: 'Jost', sans-serif; font-size: 0.82rem; letter-spacing: 0.15em; text-transform: uppercase; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+.btn-reserve.dark { background: var(--wine); color: #ffffff; }
+.btn-reserve.dark:hover { background: var(--wine-light); transform: translateY(-1px); }
+.btn-reserve.light { background: #ffffff; color: var(--wine); }
+.btn-reserve.light:hover { background: var(--cream); }
+
+/* WINERY CONTACT (original, now footer-only) */
+#contact-winery { background: var(--dark); padding: 6rem 0 4rem; }
+.contact-grid-winery { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; }
+.contact-info-winery h2 { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: #ffffff; font-weight: 300; margin-bottom: 1rem; }
+.contact-info-winery p { color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 2rem; font-size: 0.9rem; }
+.contact-details-winery { display: flex; flex-direction: column; gap: 1rem; }
+.contact-item-winery { display: flex; align-items: flex-start; gap: 1rem; }
+.contact-icon-winery { width: 36px; height: 36px; background: rgba(122,26,46,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.9rem; }
+.contact-item-text-winery { font-size: 0.9rem; color: rgba(255,255,255,0.75); line-height: 1.5; }
+.contact-item-text-winery strong { color: var(--gold); display: block; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.2rem; font-weight: 400; }
+.contact-form-winery { display: flex; flex-direction: column; gap: 1rem; }
+.contact-form-winery h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: #ffffff; font-weight: 300; margin-bottom: 0.5rem; }
+.contact-form-winery input, .contact-form-winery textarea { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 0.9rem 1.2rem; color: #ffffff; font-family: 'Jost', sans-serif; font-size: 0.9rem; outline: none; transition: border-color 0.3s; }
+.contact-form-winery input::placeholder, .contact-form-winery textarea::placeholder { color: rgba(255,255,255,0.3); }
+.contact-form-winery input:focus, .contact-form-winery textarea:focus { border-color: var(--gold); }
+.contact-form-winery textarea { min-height: 120px; resize: vertical; }
+.btn-send-winery { background: var(--wine); color: #ffffff; border: none; padding: 1rem; border-radius: 6px; font-family: 'Jost', sans-serif; font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; transition: all 0.3s; }
+.btn-send-winery:hover { background: var(--wine-light); transform: translateY(-1px); }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); margin-top: 4rem; padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+.footer-logo { font-family: 'Cormorant Garamond', serif; color: var(--gold); font-size: 1.3rem; font-weight: 300; letter-spacing: 0.1em; }
+.footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.3); letter-spacing: 0.05em; }
+
+/* MODAL */
+.modal-overlay { display: none; position: fixed; inset: 0; z-index: 200; background: rgba(0,0,0,0.75); backdrop-filter: blur(6px); align-items: center; justify-content: center; }
+.modal-overlay.active { display: flex; animation: fadeIn 0.25s ease; }
+@keyframes fadeIn { from{opacity:0} to{opacity:1} }
+.modal { background: var(--white); border-radius: 12px; padding: 3rem; max-width: 520px; width: 90%; position: relative; animation: slideUp 0.3s ease; }
+@keyframes slideUp { from{transform:translateY(20px);opacity:0} to{transform:translateY(0);opacity:1} }
+.modal-close { position: absolute; top: 1.2rem; right: 1.5rem; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-light); transition: color 0.2s; }
+.modal-close:hover { color: var(--wine); }
+.modal h2 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 0.4rem; color: var(--text); }
+.modal-sub { font-size: 0.85rem; color: var(--text-light); margin-bottom: 1.8rem; }
+.modal form { display: flex; flex-direction: column; gap: 1rem; }
+.modal form select, .modal form input { padding: 0.85rem 1rem; border: 1px solid #e0d8d0; border-radius: 6px; font-family: 'Jost', sans-serif; font-size: 0.9rem; color: var(--text); outline: none; background: var(--white); transition: border-color 0.3s; }
+.modal form select:focus, .modal form input:focus { border-color: var(--wine); }
+.modal form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.success-msg { display:none; text-align:center; padding:1.5rem; }
+.success-msg .checkmark { font-size:3rem; margin-bottom:1rem; }
+.success-msg h3 { font-family:'Cormorant Garamond',serif; font-size:1.6rem; color:var(--wine); margin-bottom:0.5rem; }
+.success-msg p { font-size:0.9rem; color:var(--text-light); }
+
+/* TOAST */
+.toast { display:none; position:fixed; bottom:2rem; right:2rem; z-index:300; background:var(--dark); color:var(--white); padding:1rem 1.5rem; border-radius:8px; font-size:0.85rem; border-left:4px solid var(--gold); }
+.toast.show { display:block; animation: slideLeft 0.3s ease; }
+@keyframes slideLeft { from{transform:translateX(100%);opacity:0} to{transform:translateX(0);opacity:1} }
+
+
+/* ===========================================
+   CONTACT PAGE STYLES (index__11_)
+   =========================================== */
+
+#contact-page {
+  font-family: 'DM Mono', monospace;
+  background: var(--c-bg);
+  color: var(--c-text);
+  position: relative;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+#contact-page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height%3D'100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+#contact-page > * { position: relative; z-index: 1; }
+
+.c-hero {
+  padding: 5rem 3rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 2rem;
+}
+
+.c-hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: var(--c-text);
+  animation: fadeUp 0.6s ease both;
+}
+
+.c-hero-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--c-accent);
+  display: block;
+}
+
+.c-hero-sub {
+  font-size: 0.68rem;
+  color: var(--c-muted);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  line-height: 2;
+  text-align: right;
+}
+
+.c-hero-sub span {
+  display: block;
+  color: var(--c-accent2);
+}
+
+.c-line {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.c-line hr {
+  border: none;
+  border-top: 1px solid var(--c-border);
+  margin-bottom: 3rem;
+}
+
+.c-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3rem 4rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.c-form-card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: 2px;
+  overflow: hidden;
+  animation: fadeUp 0.6s ease both;
+  transition: background 0.4s ease, border-color 0.4s ease;
+}
+
+.c-form-card-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--c-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--c-surface2);
+  transition: background 0.4s ease;
+}
+
+.c-form-card-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--c-text);
+}
+
+.c-form-card-header .c-badge {
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--c-muted);
+  border: 1px solid var(--c-border);
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+}
+
+.c-form { padding: 2rem; display: flex; flex-direction: column; gap: 0; }
+
+.c-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.c-fieldset + .c-fieldset {
+  border-top: 1px solid var(--c-border);
+  padding-top: 2rem;
+}
+
+.c-legend {
+  font-size: 0.58rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--c-accent);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  list-style: none;
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+.c-legend::before {
+  content: '◆';
+  font-size: 0.4rem;
+  color: var(--c-accent);
+}
+
+.c-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.c-fields .full { grid-column: 1 / -1; }
+
+.c-field-float { position: relative; }
+
+.c-field-float input,
+.c-field-float select,
+.c-field-float textarea {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.88rem;
+  background: var(--c-bg);
+  border: 1px solid var(--c-border);
+  border-radius: var(--c-radius);
+  padding: 1.6rem 1rem 0.55rem;
+  color: var(--c-text);
+  outline: none;
+  width: 100%;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
+  appearance: none;
+}
+
+.c-field-float textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.7;
+}
+
+.c-field-float label {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.82rem;
+  color: var(--c-muted);
+  pointer-events: none;
+  transition: all 0.2s ease;
+  letter-spacing: 0.03em;
+}
+
+.c-field-float textarea ~ label { top: 1.1rem; transform: none; }
+
+.c-field-float input:focus ~ label,
+.c-field-float input:not(:placeholder-shown) ~ label,
+.c-field-float select:focus ~ label,
+.c-field-float select.has-value ~ label,
+.c-field-float textarea:focus ~ label,
+.c-field-float textarea:not(:placeholder-shown) ~ label {
+  top: 0.5rem;
+  transform: none;
+  font-size: 0.55rem;
+  color: var(--c-accent);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.c-field-float input:focus,
+.c-field-float select:focus,
+.c-field-float textarea:focus {
+  border-color: var(--c-accent);
+  background: var(--c-surface2);
+  box-shadow: 0 0 0 2px rgba(232,201,122,0.1);
+}
+
+.c-field-float input:valid:not(:placeholder-shown) { border-color: #2a3a2e; }
+.c-field-float input:invalid:not(:placeholder-shown) { border-color: #3a2a2a; }
+
+.c-select-wrap { position: relative; }
+.c-select-wrap::after {
+  content: '▾';
+  position: absolute;
+  right: 1rem; top: 50%;
+  transform: translateY(-50%);
+  color: var(--c-muted);
+  pointer-events: none;
+  font-size: 0.8rem;
+}
+
+.c-error-msg {
+  display: none;
+  font-size: 0.62rem;
+  color: var(--c-error);
+  margin-top: 0.3rem;
+  padding: 0.3rem 0.7rem;
+  background: rgba(232,122,122,0.06);
+  border-left: 2px solid var(--c-error);
+  letter-spacing: 0.04em;
+}
+
+.c-field-float input:invalid:not(:placeholder-shown):not(:focus) ~ .c-error-msg { display: block; }
+
+.c-char-count {
+  font-size: 0.6rem;
+  color: var(--c-muted);
+  text-align: right;
+  margin-top: 0.3rem;
+  letter-spacing: 0.1em;
+  transition: color 0.2s;
+}
+.c-char-count.warn { color: var(--c-error); }
+
+.c-submit-row {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  border-top: 1px solid var(--c-border);
+}
+
+.c-submit-btn {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background: var(--c-accent);
+  color: #0e0e0e;
+  border: none;
+  border-radius: var(--c-radius);
+  padding: 0.85rem 2.5rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.2s, transform 0.1s, color 0.2s;
+}
+
+.c-submit-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 25%, rgba(255,255,255,0.3) 50%, transparent 75%);
+  transform: translateX(-100%);
+}
+
+.c-submit-btn:hover { background: #f0d88a; }
+.c-submit-btn:hover::after { animation: shimmer 0.85s ease infinite; }
+.c-submit-btn:active { transform: scale(0.97); }
+
+.c-submit-btn.loading {
+  background: #8a7840;
+  pointer-events: none;
+  color: transparent;
+}
+
+.c-submit-btn.loading::before {
+  content: '';
+  position: absolute;
+  width: 16px; height: 16px;
+  border: 2px solid rgba(0,0,0,0.2);
+  border-top-color: #0e0e0e;
+  border-radius: 50%;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+@keyframes spin {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.c-info-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: sticky;
+  top: 5rem;
+}
+
+.c-map-card {
+  border: 1px solid var(--c-border);
+  border-radius: 2px;
+  overflow: hidden;
+  background: var(--c-surface);
+  animation: fadeUp 0.6s 0.1s ease both;
+  transition: background 0.4s ease, border-color 0.4s ease;
+}
+
+/* Explicit width & height pe iframe pentru stabilitate vizuală */
+.c-map-card iframe {
+  display: block;
+  width: 100%;
+  height: 220px;
+  border: none;
+  filter: grayscale(1) invert(0.85) contrast(0.9);
+  opacity: 0.85;
+}
+
+.c-map-footer {
+  padding: 0.9rem 1.2rem;
+  border-top: 1px solid var(--c-border);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--c-surface2);
+  transition: background 0.4s ease;
+}
+
+.c-map-footer .c-dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--c-accent);
+  flex-shrink: 0;
+}
+
+.c-map-footer p {
+  font-size: 0.65rem;
+  color: var(--c-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.c-contact-card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: 2px;
+  overflow: hidden;
+  animation: fadeUp 0.6s 0.2s ease both;
+  transition: background 0.4s ease, border-color 0.4s ease;
+}
+
+.c-contact-card-header {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid var(--c-border);
+  background: var(--c-surface2);
+  transition: background 0.4s ease;
+}
+
+.c-contact-card-header h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--c-text);
+}
+
+.c-contact-list { padding: 1rem 0; }
+
+.c-contact-item-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.9rem 1.2rem;
+  border-bottom: 1px solid var(--c-border);
+  transition: background 0.15s;
+}
+
+.c-contact-item-detail:last-child { border-bottom: none; }
+.c-contact-item-detail:hover { background: var(--c-surface2); }
+
+.c-contact-icon-detail {
+  width: 28px; height: 28px;
+  border: 1px solid var(--c-border);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+  color: var(--c-accent);
+  background: var(--c-bg);
+  transition: background 0.4s ease, border-color 0.4s ease;
+}
+
+.c-contact-info-detail strong {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--c-accent);
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.c-contact-info-detail p {
+  font-size: 0.75rem;
+  color: var(--c-muted);
+  line-height: 1.6;
+}
+
+.c-hours-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.6rem;
+  color: var(--c-success);
+  letter-spacing: 0.1em;
+  margin-top: 0.2rem;
+}
+
+.c-hours-badge::before {
+  content: '';
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--c-success);
+  box-shadow: 0 0 4px var(--c-success);
+}
+
+/* ===========================================
+   PRINT & RESPONSIVE
+   =========================================== */
+
+@media print {
+  nav#navbar, .scroll-indicator, .btn-primary, .btn-reserve, .btn-send-winery, .modal-overlay, .toast, .hamburger, .nav-cta, .btn-toggle-colors { display: none !important; }
+  body { font-family: Arial, sans-serif; color: #000; background: #fff; }
+  #hero { height: auto; min-height: unset; padding: 2rem 0; }
+  .hero-bg, .hero-vine, .hero-overlay { display: none; }
+  .hero-title-winery, .hero-sub, .hero-eyebrow { color: #000; }
+  .hero-title-winery em { color: #7a1a2e; }
+  .winery-section { padding: 2rem 0; }
+  .section-title, h2, h3 { color: #000; }
+  #contact-winery { background: #fff; }
+  .contact-info-winery h2, .contact-form-winery h3 { color: #000; }
+  .footer-logo, .footer-copy { color: #000; }
+  a { color: #000; }
+  #contact-page { background: #fff; color: #000; }
+}
+
+@media (max-width: 1024px) {
+  .packages-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 960px) {
+  .c-layout { grid-template-columns: 1fr; padding: 0 1.5rem 3rem; }
+  .c-info-side { position: static; }
+  .c-hero { padding: 3rem 1.5rem 2rem; grid-template-columns: 1fr; }
+  .c-hero-sub { text-align: left; }
+  .c-line { padding: 0 1.5rem; }
+  .c-fields { grid-template-columns: 1fr; }
+  .c-fields .full { grid-column: 1; }
+}
+
+@media (max-width: 900px) {
+  nav#navbar { padding: 1rem 1.5rem; }
+  nav#navbar.scrolled { padding: 0.8rem 1.5rem; }
+  .nav-links { display: none; }
+  .nav-actions { display: flex; align-items: center; gap: 0.5rem; }
+  .hamburger { display: flex; }
+  .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 60px; left: 0; right: 0; background: var(--dark); padding: 2rem; gap: 1.5rem; z-index: 99; }
+  .about-grid, .contact-grid-winery { grid-template-columns: 1fr; gap: 2.5rem; }
+  .wines-grid { grid-template-columns: 1fr; }
+  .packages-grid { grid-template-columns: 1fr; }
+  .exp-gallery { grid-template-columns: 1fr 1fr; }
+  .stats { flex-wrap: wrap; gap: 1.5rem; }
+  .about-accent { display: none; }
+  .package-card.featured { transform: none; }
+  .modal form .form-row { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .exp-gallery { grid-template-columns: 1fr; }
+  .hero-title-winery { font-size: 2.2rem; }
+  .container { padding: 0 1rem; }
+  .modal { padding: 2rem 1.5rem; }
+  .c-hero { padding: 2rem 1rem 1.5rem; }
+  .c-layout { padding: 0 1rem 2rem; }
+}
+
+@media (max-width: 360px) {
+  body { font-size: 14px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav id="navbar" role="navigation" aria-label="Navigație principală" class="">
+  <a href="http://127.0.0.1:5500/Vinarie%20si%20degustator%20de%20vinuri.html#hero" class="nav-logo" aria-label="Domeniul Vinului - pagina principală">Domeniul Vinului</a>
+  <ul class="nav-links" id="navLinks" role="menubar">
+    <li role="none"><a href="http://127.0.0.1:5500/Vinarie%20si%20degustator%20de%20vinuri.html#about" role="menuitem">Povestea Noastră</a></li>
+    <li role="none"><a href="http://127.0.0.1:5500/Vinarie%20si%20degustator%20de%20vinuri.html#wines" role="menuitem">Vinuri</a></li>
+    <li role="none"><a href="http://127.0.0.1:5500/Vinarie%20si%20degustator%20de%20vinuri.html#experience" role="menuitem">Experiență</a></li>
+    <li role="none"><a href="http://127.0.0.1:5500/Vinarie%20si%20degustator%20de%20vinuri.html#packages" role="menuitem">Pachete</a></li>
+    <li role="none"><a href="http://127.0.0.1:5500/Vinarie%20si%20degustator%20de%20vinuri.html#contact-page" role="menuitem">Contact</a></li>
+  </ul>
+  
+  <div class="nav-actions">
+    <button class="btn-toggle-colors" onclick="toggleColorTheme()" title="Schimbă culorile" aria-label="Schimbă culorile site-ului">🌓</button>
+    <a href="http://127.0.0.1:5500/Vinarie%20si%20degustator%20de%20vinuri.html#" class="nav-cta" onclick="openModal(&#39;modal-rezervare&#39;);return false;" aria-label="Deschide formularul de rezervare">Rezervă</a>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Deschide meniul de navigație" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="hero" aria-label="Secțiunea principală">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-vine" aria-hidden="true"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Cricova, Republica Moldova</p>
+    <h1 class="hero-title-winery">Vinărie și<br><em>Degustare de Vinuri</em></h1>
+    <p class="hero-sub">Tradiție, Pasiune și Eleganță în fiecare pahar</p>
+    <a href="http://127.0.0.1:5500/Vinarie%20si%20degustator%20de%20vinuri.html#" class="btn-primary" onclick="openModal(&#39;modal-rezervare&#39;);return false;" aria-label="Rezervă o degustare de vinuri">Rezervă o Degustare</a>
+  </div>
+  <div class="scroll-indicator" onclick="document.querySelector(&#39;#about&#39;).scrollIntoView({behavior:&#39;smooth&#39;})" aria-hidden="true">
+    <span></span><span></span>
+  </div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section id="about" class="winery-section" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="section-tag">Povestea Noastră</p>
+        <h2 class="section-title" id="about-title">Tradiție și Pasiune<br>de Trei Generații</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p>De peste trei generații, familia noastră cultivă vita de vie cu pasiune și devotament. Vinăria noastră se întinde pe 50 de hectare de podgorii însorite, unde producem vinuri premium.</p>
+        <p>Fiecare sticlă poartă în ea tradiția, expertiza și iubirea pentru vinificație. Vă invităm să descoperiți aromele și savoarea vinurilor noastre rafinate.</p>
+        <div class="stats" role="list" aria-label="Statistici vinărie">
+          <div class="stat-item" role="listitem">
+            <div class="stat-icon" aria-hidden="true">🏆</div>
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Premii</div>
+          </div>
+          <div class="stat-item" role="listitem">
+            <div class="stat-icon" aria-hidden="true">🌿</div>
+            <div class="stat-number">50ha</div>
+            <div class="stat-label">Podgorii</div>
+          </div>
+          <div class="stat-item" role="listitem">
+            <div class="stat-icon" aria-hidden="true">👨‍👩‍👦</div>
+            <div class="stat-number">3</div>
+            <div class="stat-label">Generații</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-image">
+        <!-- Optimizare dimensiuni imagine about + decoding asincron -->
+        <img src="./Domeniul Vinului — Vinărie &amp; Degustare_files/photo-1506377247377-2a5b3b417ebb" alt="Podgoriile vinăriei noastre în sezon de recoltă" width="600" height="450" loading="lazy" decoding="async">
+        <div class="about-accent" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WINES ══ -->
+<section id="wines" class="winery-section" aria-labelledby="wines-title">
+  <div class="container">
+    <p class="section-tag" style="text-align:center">Colecția Noastră</p>
+    <h2 class="section-title centered" id="wines-title">Colecția Noastră de Vinuri</h2>
+    <div class="divider centered" aria-hidden="true"></div>
+    <p class="section-sub centered">Vinuri selectate cu grijă, cultivate și îmbuteliate pe proprietatea noastră</p>
+    <div class="wines-grid" role="list">
+      <div class="wine-card" role="listitem">
+        <div class="wine-header">
+          <div class="wine-name">Cabernet Sauvignon Reserve</div>
+          <div class="wine-price" aria-label="Preț 45 euro">€45</div>
+        </div>
+        <div class="wine-meta">2020 <span class="wine-type-badge badge-red">Roșu</span></div>
+        <div class="wine-desc">Full-bodied with notes of blackcurrant, cedar, and dark chocolate</div>
+      </div>
+      <div class="wine-card" role="listitem">
+        <div class="wine-header">
+          <div class="wine-name">Chardonnay Estate</div>
+          <div class="wine-price" aria-label="Preț 32 euro">€32</div>
+        </div>
+        <div class="wine-meta">2022 <span class="wine-type-badge badge-white">Alb</span></div>
+        <div class="wine-desc">Elegant and crisp with hints of green apple, citrus, and vanilla</div>
+      </div>
+      <div class="wine-card" role="listitem">
+        <div class="wine-header">
+          <div class="wine-name">Pinot Noir Selection</div>
+          <div class="wine-price" aria-label="Preț 38 euro">€38</div>
+        </div>
+        <div class="wine-meta">2021 <span class="wine-type-badge badge-red">Roșu</span></div>
+        <div class="wine-desc">Silky texture with flavors of cherry, raspberry, and subtle spice</div>
+      </div>
+      <div class="wine-card" role="listitem">
+        <div class="wine-header">
+          <div class="wine-name">Sauvignon Blanc</div>
+          <div class="wine-price" aria-label="Preț 28 euro">€28</div>
+        </div>
+        <div class="wine-meta">2023 <span class="wine-type-badge badge-white">Alb</span></div>
+        <div class="wine-desc">Fresh and vibrant with tropical fruit and herbaceous notes</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ EXPERIENCE ══ -->
+<section id="experience" class="winery-section" aria-labelledby="exp-title">
+  <div class="container">
+    <p class="section-tag" style="text-align:center">Vizitați-ne</p>
+    <h2 class="section-title centered" id="exp-title">Experiența Degustării</h2>
+    <div class="divider centered" aria-hidden="true"></div>
+    <p class="section-sub centered">Descoperiți lumea vinurilor noastre printr-o experiență unică și memorabilă</p>
+    <div class="exp-gallery">
+      <div class="exp-img">
+        <img src="./Domeniul Vinului — Vinărie &amp; Degustare_files/photo-1510812431401-41d2bd2722f3" alt="Pahare de vin la o degustare elegantă" loading="lazy" width="500" height="375" decoding="async">
+      </div>
+      <div class="exp-img">
+        <img src="./Domeniul Vinului — Vinărie &amp; Degustare_files/photo-1474722883778-792e7990302f" alt="Butoaie de vin în pivniță" loading="lazy" width="500" height="375" decoding="async">
+      </div>
+      <div class="exp-img">
+        <img src="./Domeniul Vinului — Vinărie &amp; Degustare_files/photo-1543158266-0066955047b1" alt="Podgorii verzi în lumina soarelui" loading="lazy" width="500" height="375" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PACKAGES ══ -->
+<section id="packages" class="winery-section" aria-labelledby="pkg-title">
+  <div class="container">
+    <p class="section-tag" style="text-align:center">Experiențe</p>
+    <h2 class="section-title centered" id="pkg-title">Pachete de Degustare</h2>
+    <div class="divider centered" aria-hidden="true"></div>
+    <p class="section-sub centered">Alegeți experiența perfectă pentru a descoperi vinurile noastre</p>
+    <div class="packages-grid">
+      <div class="package-card">
+        <div class="pkg-badge">Classic</div>
+        <div class="pkg-name">Degustare Clasică</div>
+        <div class="pkg-meta">
+          <div class="pkg-meta-item"><span class="icon" aria-hidden="true">⏱</span> 60 min</div>
+          <div class="pkg-meta-item"><span class="icon" aria-hidden="true">👥</span> 2-8 persoane</div>
+        </div>
+        <div class="pkg-price">€25</div>
+        <div class="pkg-price-label">per persoană</div>
+        <div class="pkg-desc">Degustați 5 dintre vinurile noastre de semnătură cu ghidaj de expert</div>
+        <button class="btn-reserve dark" onclick="openModal(&#39;modal-rezervare&#39;, &#39;Degustare Clasică&#39;)" aria-label="Rezervă pachetul Degustare Clasică la 25 euro per persoană">📅 Rezervă Acum</button>
+      </div>
+      <div class="package-card featured" aria-label="Pachet recomandat">
+        <div class="pkg-badge">Popular</div>
+        <div class="pkg-name">Degustare Premium</div>
+        <div class="pkg-meta">
+          <div class="pkg-meta-item"><span class="icon" aria-hidden="true">⏱</span> 90 min</div>
+          <div class="pkg-meta-item"><span class="icon" aria-hidden="true">👥</span> 2-6 persoane</div>
+        </div>
+        <div class="pkg-price">€45</div>
+        <div class="pkg-price-label">per persoană</div>
+        <div class="pkg-desc">Degustare exclusivă din colecția rezervă cu asociere de brânzeturi</div>
+        <button class="btn-reserve light" onclick="openModal(&#39;modal-rezervare&#39;, &#39;Degustare Premium&#39;)" aria-label="Rezervă pachetul Degustare Premium la 45 euro per persoană">📅 Rezervă Acum</button>
+      </div>
+      <div class="package-card">
+        <div class="pkg-badge">Aventură</div>
+        <div class="pkg-name">Tur &amp; Degustare</div>
+        <div class="pkg-meta">
+          <div class="pkg-meta-item"><span class="icon" aria-hidden="true">⏱</span> 120 min</div>
+          <div class="pkg-meta-item"><span class="icon" aria-hidden="true">👥</span> 2-12 persoane</div>
+        </div>
+        <div class="pkg-price">€35</div>
+        <div class="pkg-price-label">per persoană</div>
+        <div class="pkg-desc">Plimbare prin podgorii și pivnițe, urmată de o degustare completă</div>
+        <button class="btn-reserve dark" onclick="openModal(&#39;modal-rezervare&#39;, &#39;Tur &amp; Degustare&#39;)" aria-label="Rezervă pachetul Tur și Degustare la 35 euro per persoană">📅 Rezervă Acum</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT PAGE (index__11_) ══ -->
+<section id="contact-page" aria-labelledby="contact-page-title">
+
+  <!-- Hero -->
+  <header class="c-hero">
+    <h2 class="c-hero-title" id="contact-page-title">
+      Contactează
+      <em>— ne</em>
+    </h2>
+    <div class="c-hero-sub">
+      <span>Răspundem în</span>
+      &lt; 24 ore
+      <span style="margin-top:0.5rem">Chișinău, MD</span>
+    </div>
+  </header>
+
+  <div class="c-line"><hr></div>
+
+  <!-- Main layout -->
+  <div class="c-layout">
+
+    <!-- Form 2/3 -->
+    <div>
+      <div class="c-form-card">
+        <div class="c-form-card-header">
+          <h3 style="font-family:&#39;Playfair Display&#39;,serif;font-size:1.1rem;font-weight:400;font-style:italic;color:var(--c-text);">Trimite un mesaj</h3>
+          <span class="c-badge">Formular securizat</span>
+        </div>
+
+        <form class="c-form" novalidate="" onsubmit="handleContactSubmit(event)">
+
+          <!-- Fieldset 1 -->
+          <div class="c-fieldset">
+            <div class="c-legend" role="presentation">Date personale</div>
+            <div class="c-fields">
+              <div class="c-field-float">
+                <input type="text" id="fname" name="given-name" placeholder=" " autocomplete="given-name" required="">
+                <label for="fname">Prenume</label>
+              </div>
+              <div class="c-field-float">
+                <input type="text" id="lname" name="family-name" placeholder=" " autocomplete="family-name" required="">
+                <label for="lname">Nume de familie</label>
+              </div>
+              <div class="c-field-float">
+                <input type="email" id="c-email" name="email" placeholder=" " autocomplete="email" required="">
+                <label for="c-email">Adresă email</label>
+                <span class="c-error-msg">Introdu un email valid</span>
+              </div>
+              <div class="c-field-float">
+                <input type="tel" id="c-tel" name="tel" placeholder=" " autocomplete="tel">
+                <label for="c-tel">Telefon (opțional)</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fieldset 2 -->
+          <div class="c-fieldset">
+            <div class="c-legend" role="presentation">Despre mesaj / subiect</div>
+            <div class="c-fields">
+              <div class="c-field-float full c-select-wrap">
+                <select id="c-subiect" name="subiect" required="" onchange="this.classList.add(&#39;has-value&#39;)">
+                  <option value="" disabled="" selected=""></option>
+                  <option value="rezervare">Rezervare</option>
+                  <option value="informatii">Informații generale</option>
+                  <option value="parteneriat">Parteneriat</option>
+                  <option value="reclamatie">Reclamație</option>
+                  <option value="altele">Altele</option>
+                </select>
+                <label for="c-subiect">Subiect</label>
+              </div>
+              <div class="c-field-float full">
+                <textarea id="c-mesaj" name="mesaj" autocomplete="off" maxlength="500" placeholder=" " oninput="updateCount(this)" required=""></textarea>
+                <label for="c-mesaj">Mesajul tău</label>
+                <div class="c-char-count" id="charCount">0 / 500</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="c-submit-row">
+            <button type="submit" id="cSubmitBtn" class="c-submit-btn">Trimite mesajul →</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Sidebar 1/3 -->
+    <aside class="c-info-side">
+
+      <!-- Map (Optimizat cu atribute explicite de design) -->
+      <div class="c-map-card">
+        <iframe src="./Domeniul Vinului — Vinărie &amp; Degustare_files/embed.html" title="Locație Chișinău" width="100%" height="220" loading="lazy" allowfullscreen="">
+        </iframe>
+        <div class="c-map-footer">
+          <span class="c-dot"></span>
+          <p>Chișinău, Republica Moldova</p>
+        </div>
+      </div>
+
+      <!-- Contact details -->
+      <div class="c-contact-card">
+        <div class="c-contact-card-header">
+          <h3>Detalii de contact</h3>
+        </div>
+        <div class="c-contact-list">
+          <div class="c-contact-item-detail">
+            <div class="c-contact-icon-detail">✉</div>
+            <div class="c-contact-info-detail">
+              <strong>Email</strong>
+              <p>ppslucian@gmail.com</p>
+            </div>
+          </div>
+          <div class="c-contact-item-detail">
+            <div class="c-contact-icon-detail">☎</div>
+            <div class="c-contact-info-detail">
+              <strong>Telefon</strong>
+              <p>+373 22 123 456</p>
+              <span class="c-hours-badge">Lun–Vin 10:00–18:00</span>
+            </div>
+          </div>
+          <div class="c-contact-item-detail">
+            <div class="c-contact-icon-detail">⊞</div>
+            <div class="c-contact-info-detail">
+              <strong>Adresă</strong>
+              <p>Strada Podgoriei nr. 45<br>Cricova, MD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <div class="container">
+    <div class="footer-bottom" style="border-color:rgba(255,255,255,0.08);">
+      <div class="footer-logo">Domeniul Vinului</div>
+      <div class="footer-copy">© 2025 Domeniul Vinului · Cricova, Moldova · Popas Lucian | ppslucian@gmail.com</div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ══ MODAL REZERVARE ══ -->
+<div class="modal-overlay" id="modal-rezervare" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="closeModalOutside(event,&#39;modal-rezervare&#39;)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal(&#39;modal-rezervare&#39;)" aria-label="Închide fereastra de rezervare">×</button>
+    <div id="modal-form-content">
+      <h2 id="modal-title">Rezervă o Degustare</h2>
+      <p class="modal-sub">Completați formularul și vă vom contacta pentru confirmare</p>
+      <form onsubmit="submitReservation(event)" novalidate="">
+        <select id="pkg-select" aria-label="Selectați pachetul dorit">
+          <option value="">Selectați pachetul</option>
+          <option value="Degustare Clasică">Degustare Clasică — €25/pers</option>
+          <option value="Degustare Premium">Degustare Premium — €45/pers</option>
+          <option value="Tur &amp; Degustare">Tur &amp; Degustare — €35/pers</option>
+        </select>
+        <div class="form-row">
+          <input type="text" id="rez-name" placeholder="Nume complet" aria-label="Nume complet" required="">
+          <input type="email" id="rez-email" placeholder="Email" aria-label="Adresa de email" required="">
+        </div>
+        <div class="form-row">
+          <input type="tel" id="rez-phone" placeholder="Telefon" aria-label="Numărul de telefon">
+          <input type="number" id="rez-persons" placeholder="Nr. persoane" aria-label="Numărul de persoane" min="2" max="12">
+        </div>
+        <input type="date" id="rez-date" aria-label="Data dorită pentru rezervare" min="2026-05-21">
+        <button type="submit" class="btn-send-winery" style="width:100%;border-radius:6px;">Trimite Rezervarea</button>
+      </form>
+    </div>
+    <div class="success-msg" id="success-msg" role="alert">
+      <div class="checkmark" aria-hidden="true">✅</div>
+      <h3>Rezervare Trimisă!</h3>
+      <p>Vă mulțumim! Vă vom contacta în cel mai scurt timp pentru confirmare.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══ TOAST ══ -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script defer="">
+  /* ── Color Theme Toggler ── */
+  function toggleColorTheme() {
+    const body = document.body;
+    body.classList.toggle('alt-colors');
+    
+    if (body.classList.contains('alt-colors')) {
+      localStorage.setItem('theme', 'alt-colors');
+      showToast('🎨 Culorile au fost schimbate!');
+    } else {
+      localStorage.setItem('theme', 'default');
+      showToast('🎨 Revenit la culorile originale.');
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'alt-colors') {
+      document.body.classList.add('alt-colors');
+    }
+  });
+
+  /* ── Nav scroll cu passive listener pentru performanță maximă ── */
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+  }, { passive: true });
+
+  /* ── Mobile menu ── */
+  function toggleMenu() {
+    const links = document.getElementById('navLinks');
+    const btn = document.getElementById('hamburger');
+    const isOpen = links.classList.toggle('open');
+    btn.setAttribute('aria-expanded', isOpen);
+    btn.setAttribute('aria-label', isOpen ? 'Închide meniul' : 'Deschide meniul de navigație');
+  }
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.getElementById('navLinks').classList.remove('open');
+      document.getElementById('hamburger').setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* ── Modal ── */
+  function openModal(id, pkg) {
+    document.getElementById(id).classList.add('active');
+    document.getElementById('modal-form-content').style.display = 'block';
+    document.getElementById('success-msg').style.display = 'none';
+    if (pkg) {
+      const sel = document.getElementById('pkg-select');
+      if (sel) for (let o of sel.options) { if (o.value === pkg) sel.value = pkg; }
+    }
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => document.querySelector('#' + id + ' .modal-close')?.focus(), 100);
+  }
+  function closeModal(id) {
+    document.getElementById(id).classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  function closeModalOutside(e, id) {
+    if (e.target === document.getElementById(id)) closeModal(id);
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') document.querySelectorAll('.modal-overlay.active').forEach(m => {
+      m.classList.remove('active'); document.body.style.overflow = '';
+    });
+  });
+
+  /* ── Reservation ── */
+  function submitReservation(e) {
+    e.preventDefault();
+    const pkg = document.getElementById('pkg-select').value;
+    const name = document.getElementById('rez-name').value;
+    const email = document.getElementById('rez-email').value;
+    if (!pkg || !name || !email) { showToast('⚠️ Completați câmpurile obligatorii'); return; }
+    document.getElementById('modal-form-content').style.display = 'none';
+    document.getElementById('success-msg').style.display = 'block';
+    showToast('🎉 Rezervare trimisă cu succes!');
+    setTimeout(() => closeModal('modal-rezervare'), 4000);
+  }
+
+  /* ── Toast ── */
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg; t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 3500);
+  }
+
+  /* ── Smooth scroll ── */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const href = a.getAttribute('href');
+      if (href.length > 1 && !a.getAttribute('onclick')) {
+        e.preventDefault();
+        document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  /* ── Min date ── */
+  const dateInput = document.getElementById('rez-date');
+  if (dateInput) dateInput.min = new Date().toISOString().split('T')[0];
+
+  /* ── Contact form (index__11_) ── */
+  function updateCount(el) {
+    const count = el.value.length;
+    const display = document.getElementById('charCount');
+    display.textContent = `${count} / ${el.maxLength}`;
+    display.classList.toggle('warn', count >= el.maxLength * 0.9);
+  }
+
+  function handleContactSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = document.getElementById('cSubmitBtn');
+    if (form.checkValidity()) {
+      btn.classList.add('loading');
+      setTimeout(() => {
+        btn.classList.remove('loading');
+        btn.textContent = 'Trimite mesajul →';
+        showToast('✅ Mesaj trimis cu succes!');
+        form.reset();
+        document.getElementById('charCount').textContent = '0 / 500';
+        form.querySelectorAll('select').forEach(s => s.classList.remove('has-value'));
+      }, 1800);
+    } else {
+      form.reportValidity();
+    }
+  }
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
